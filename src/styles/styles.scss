@@ -1,0 +1,427 @@
+/* Variables */
+$vin-blue: #5bb7db;
+$vin-green: #60b044;
+$vin-red: #ff0000;
+
+/* Styles */
+html, body
+{
+  height: 100%;
+  width: 100%;
+}
+/* 'Verdana; Helvetica Neue; Helvetica; Arial; sans-serif';*/
+body
+{
+  background: #FFFFF;
+  background-size: contain;
+  font: 14px 'Roboto Mono', monospace;
+  line-height: 1.4em;
+  color: #black;
+  margin: 0 auto;
+  font-smoothing: antialiased;
+  font-weight: 300;
+}
+
+.peopleCards-2{
+background: linear-gradient(45deg, #ff0000, #0027ff);
+background-size: 600% 600%;
+
+-webkit-animation: StarWarsWebAppDivAnimation 0s ease infinite;
+-moz-animation: StarWarsWebAppDivAnimation 0s ease infinite;
+animation: StarWarsWebAppDivAnimation 0s ease infinite;
+
+@-webkit-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:87% 0%}
+    50%{background-position:14% 100%}
+    100%{background-position:87% 0%}
+}
+@-moz-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:87% 0%}
+    50%{background-position:14% 100%}
+    100%{background-position:87% 0%}
+}
+@keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:87% 0%}
+    50%{background-position:14% 100%}
+    100%{background-position:87% 0%}
+}
+}
+
+.peopleCards-3{
+background: linear-gradient(146deg, #ff0000, #000000, #0004c8);
+background-size: 600% 600%;
+
+-webkit-animation: StarWarsWebAppDivAnimation 51s ease infinite;
+-moz-animation: StarWarsWebAppDivAnimation 51s ease infinite;
+-o-animation: StarWarsWebAppDivAnimation 51s ease infinite;
+animation: StarWarsWebAppDivAnimation 51s ease infinite;
+
+@-webkit-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@-moz-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@-o-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+@keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 14%}
+    50%{background-position:100% 87%}
+    100%{background-position:0% 14%}
+}
+}
+
+.peopleCards-4{
+background: linear-gradient(269deg, #ff0000, #000000, #0004c8);
+background-size: 600% 600%;
+
+-webkit-animation: StarWarsWebAppDivAnimation 10s ease infinite;
+-moz-animation: StarWarsWebAppDivAnimation 10s ease infinite;
+-o-animation: StarWarsWebAppDivAnimation 10s ease infinite;
+animation: StarWarsWebAppDivAnimation 10s ease infinite;
+
+@-webkit-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-o-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+}
+
+.peopleCards-0{
+
+background: linear-gradient(2deg, #ca0000, #000000, #2428ff);
+background-size: 600% 600%;
+
+-webkit-animation: StarWarsWebAppDivAnimation 30s ease infinite;
+-moz-animation: StarWarsWebAppDivAnimation 30s ease infinite;
+-o-animation: StarWarsWebAppDivAnimation 30s ease infinite;
+animation: StarWarsWebAppDivAnimation 30s ease infinite;
+
+@-webkit-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@-moz-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@-o-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+
+}
+.peopleCards-5{
+background: linear-gradient(124deg, #ca0000, #000000, #2428ff);
+background-size: 600% 600%;
+
+-webkit-animation: StarWarsWebAppDivAnimation 6s ease infinite;
+-moz-animation: StarWarsWebAppDivAnimation 6s ease infinite;
+-o-animation: StarWarsWebAppDivAnimation 6s ease infinite;
+animation: StarWarsWebAppDivAnimation 6s ease infinite;
+
+@-webkit-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+
+}
+
+.peopleCards-6{
+  background: linear-gradient(245deg, #ca0000, #000000, #2428ff);
+  background-size: 600% 600%;
+
+  -webkit-animation: StarWarsWebAppDivAnimation 40s ease infinite;
+  -moz-animation: StarWarsWebAppDivAnimation 40s ease infinite;
+  -o-animation: StarWarsWebAppDivAnimation 40s ease infinite;
+  animation: StarWarsWebAppDivAnimation 40s ease infinite;
+
+  @-webkit-keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:25% 0%}
+      50%{background-position:76% 100%}
+      100%{background-position:25% 0%}
+  }
+  @-moz-keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:25% 0%}
+      50%{background-position:76% 100%}
+      100%{background-position:25% 0%}
+  }
+  @-o-keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:25% 0%}
+      50%{background-position:76% 100%}
+      100%{background-position:25% 0%}
+  }
+  @keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:25% 0%}
+      50%{background-position:76% 100%}
+      100%{background-position:25% 0%}
+  }
+}
+
+.peopleCards-7{
+background: linear-gradient(245deg, #ff0000, #000000, #0003a8);
+background-size: 600% 600%;
+
+-webkit-animation: StarWarsWebAppDivAnimation 24s ease infinite;
+-moz-animation: StarWarsWebAppDivAnimation 24s ease infinite;
+-o-animation: StarWarsWebAppDivAnimation 24s ease infinite;
+animation: StarWarsWebAppDivAnimation 24s ease infinite;
+
+@-webkit-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:25% 0%}
+    50%{background-position:76% 100%}
+    100%{background-position:25% 0%}
+}
+@-moz-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:25% 0%}
+    50%{background-position:76% 100%}
+    100%{background-position:25% 0%}
+}
+@-o-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:25% 0%}
+    50%{background-position:76% 100%}
+    100%{background-position:25% 0%}
+}
+@keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:25% 0%}
+    50%{background-position:76% 100%}
+    100%{background-position:25% 0%}
+}
+}
+.peopleCards-8{
+  background: linear-gradient(32deg, #ff0000, #000000, #0003a8);
+  background-size: 600% 600%;
+
+  -webkit-animation: StarWarsWebAppDivAnimation 12s ease infinite;
+  -moz-animation: StarWarsWebAppDivAnimation 12s ease infinite;
+  -o-animation: StarWarsWebAppDivAnimation 12s ease infinite;
+  animation: StarWarsWebAppDivAnimation 12s ease infinite;
+
+  @-webkit-keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:97% 0%}
+      50%{background-position:4% 100%}
+      100%{background-position:97% 0%}
+  }
+  @-moz-keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:97% 0%}
+      50%{background-position:4% 100%}
+      100%{background-position:97% 0%}
+  }
+  @-o-keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:97% 0%}
+      50%{background-position:4% 100%}
+      100%{background-position:97% 0%}
+  }
+  @keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:97% 0%}
+      50%{background-position:4% 100%}
+      100%{background-position:97% 0%}
+  }
+}
+
+.peopleCards-9{
+  background: linear-gradient(283deg, #ff0000, #000000, #0003a8);
+  background-size: 600% 600%;
+
+  -webkit-animation: StarWarsWebAppDivAnimation 38s ease infinite;
+  -moz-animation: StarWarsWebAppDivAnimation 38s ease infinite;
+  -o-animation: StarWarsWebAppDivAnimation 38s ease infinite;
+  animation: StarWarsWebAppDivAnimation 38s ease infinite;
+
+  @-webkit-keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:0% 84%}
+      50%{background-position:100% 17%}
+      100%{background-position:0% 84%}
+  }
+  @-moz-keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:0% 84%}
+      50%{background-position:100% 17%}
+      100%{background-position:0% 84%}
+  }
+  @-o-keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:0% 84%}
+      50%{background-position:100% 17%}
+      100%{background-position:0% 84%}
+  }
+  @keyframes StarWarsWebAppDivAnimation {
+      0%{background-position:0% 84%}
+      50%{background-position:100% 17%}
+      100%{background-position:0% 84%}
+  }
+}
+
+.peopleCards-1{
+  background: linear-gradient(270deg, #ff0000, #0027ff);
+background-size: 400% 400%;
+
+-webkit-animation: StarWarsWebAppDivAnimation 30s ease infinite;
+-moz-animation: StarWarsWebAppDivAnimation 30s ease infinite;
+animation: StarWarsWebAppDivAnimation 30s ease infinite;
+
+@-webkit-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes StarWarsWebAppDivAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+}
+
+
+.profileHeaderContainer{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profileHeaderImg {
+    padding: 54px;
+}
+
+.profileHeaderImg > img.imgCircle {
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;// #51D2B7;
+}
+
+.profileHeader {
+    margin-top: 43px;
+}
+
+.tagLabelContainer {
+    margin-top: -19px;
+    text-align: center;
+}
+
+.label.labelDefault.tagLabel {
+    background-color: black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 27px;
+    color: white;
+}
+
+.cardSuppress {
+  background-size: cover;
+  background-position: 50%;
+  opacity: 0.8;
+}
+
+.visible {
+  visibility:visible;
+  opacity:1;
+  transition:opacity 2s linear;
+}
+.personTopRow{
+  float: none;
+  margin: 0 auto;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+}
+.cardHeader{
+  height: 25%;
+}
+
+.cardHelper{
+  float: none;
+  margin: 0 auto;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.peopleCardHelper{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.personPageUpper{
+  float:none;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.personPageBirthYear{
+    padding-top:0px;
+    padding-bottom:10px;
+}
+.personPagePersonHeader{
+  float: none;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.personPageInRowHelper{
+  height: 50%;
+  float: none;
+  margin: 0 auto;
+  position: relative;
+  vertical-align: middle;
+  padding-bottom: 50px;
+}
+
+.personElement{
+  height: 50%;
+  padding: 5% 0;
+}
+
+.personPageBottomRow{
+  height: 35%;
+}
