@@ -105,6 +105,9 @@
                 - So it is transpiler
                 - Not every browser support latest js version
                 - So someone made middle man which take your newer version of js and transpire so it can run on older version of browser and you can achieve maximum browser compatibility of your application
+            - BrowserSync
+                - This is great tool i use to show quick demo of realtime running application. When  doing development of web application the requirement often gets changed. The need rise as the project go ahead and everyone want to so quick demo of the feature you are working/developed and they would like to participle in realtime. If one screen scroll the page the other screen also sycnc and scroll page to same are of web page. It is great development tools which enage the team in realtime, real user facing experience during dev environment
+                - It is available in library and needs to added just like NPM packages.
             - Build Setting
                 - Help us to device how we want to make build and also helps in analyzing any error happen during building package
             - Chalk
