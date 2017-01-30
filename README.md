@@ -1,2 +1,153 @@
 # starwarswithredux
 # This is an app that consume REST webservice endpoint swapi.co/api/people and allow us to browser the STAR Wars movie characters.
+
+
+-  Setup:
+    - Please download the repository to your local computer and  unzip it
+    - Please go into the directory with help of terminal.
+    - Issue  npm install  command and it will install all the  needed to run the app
+    - Once installed please run npm start to run app
+    - If you would like to know the option of different npm commands for this application
+        - please run npm run
+    - The main code is under src folder
+        - Actions
+            - Is set of instruction of what to do when specific task needed to be done
+            - E.g
+                - Fetch data from API
+                - Handle raw response from API
+                - Every endpoint has dedicated action. We use endpoint related action to fetch data easily.
+                - This also help us in seperation of concern and logging async/sync rest api calls which make logging and troubleshooting lot easier
+        - Components
+            - Are basically reactjs classes that have a responsibility to render the view on state change.
+            - The components share values using props and then update their states which automatically trigger re rendering of existing view.
+            - For the current version, we have only limited the endpoint to people and trying to display the data related to character/people of starwars api.
+            - If given more time, I would have added more views like browsing movies, planets and all other related endpints
+            - It would be very interesting to see how the infinite routing can work. I noticed that every single entity has related URL and hence it looks like complete loop this will have.
+            - At current stage we have very limited functionality of developing people browsing app so components are also limimted
+            - However, When I start developing more it would demand clear reusable class design for components that can be used not just for Person but anything with litttle/No modification. Interesting project.
+        - Constants:
+            - Moving ahead if a constant directory.
+            - The purpose of this directory is to be the home of the files which are not going to be changed much and will only have const variable values.
+            - For example
+                - Rest api URL and endpoint
+                - Like: "https://swapi.co/api/"  for base url and  "people" to get people data
+                - This can be different when you try to do pagination of people data  "/pageNo= xx" or when you more targeted thing named search with pagination!
+                - We keep all constants there and they are export it so we can directly access without iterating through Array. Oh yes, we have not immutable.js!
+        -  Containers:
+            - Container are similar like components but I kept them separate because it reduce the confusion
+            - I kept the react js components files in containers which are going to be Home component of Page components
+            - In components folder, i tried to keep the reactjs components which are the child of other page components!
+            - Ofcourse we can keep everything in the single folder. Depend on of developer's preference. No harm!
+        - Fonts:
+            - As the name says it contains the application fonts which are getting used inside the application
+            - It is always good idea to keep fonts there instead of using CDN in case cdn is down/expired/under maintainance/ browser/firewall security reason which can block the media to be downloaded from unknown sources which are not HTTPS 😃
+        - Images:
+            - It is sad to say this api does not provide any images
+            - We are not going to see fancy images of planet, vehicles or light saber.
+            - Just put any image you would like to display in the app
+        - Reducers
+            - Pardon me but as you see the directory structure is already in ascending format.
+            - That is why we got this very very important topic at the end
+            - So reducers come into play once action has been dispatched
+                - After dispatching action, the task of action is done that the action's message (what to do and where to do, like hey get me couple of more people to browser at people endpoint when user click more items button on people page)
+                - Once action is dispatched, it is reducers job that how to change application state and handle response
+                - Reducers take off thing handling state on specific actions.
+                - Reducers have the power to change/ alterate the action has been asked!
+            - I designed dedicated reducers for each endpoint. Yes for clarity and all
+            - But there will be cases when you need to combine reducers
+                - For example?
+                    - Let say you watch to fetch person data I mean let say R2D2
+                    - Then R2D2 will also have veriety of data from different endpoint and maybe not from all endpoint
+                    - That time multiple reducers fetch data and combine result into a single page!
+                    - So combining the reducer finally give us a clear single state of the application at a  time that R2D2 has no vehicles, planets or home but yes they can have other data which we would like to display to the user!
+                    - So every reducer works on their way to udpate state and sometimes it happent that some reducers finish early while other are stillwaiting for their response.
+                    - Very interesting topic of offloading work and keeping tracked that what data are left.
+                    - Reducing payload that way if also very helpful. Single reducer with doing all job does not make sense. They all just have to work as a team!
+        - Store
+            - Next, come the king of an application called the store.
+            - Store has a state and that is what application currently it, before and everything,
+            - On execution of an action by dispatching action to reducers and then middleware application move from one state to another state!
+            - I created two states just because  dev and prod environment
+            - In Dev, we def would like to know more on what is going on
+            - So that is why keeping different environment help us to keep things organized.
+            - State is the first things one need to design when writing an application
+        - Styles:
+            - Who does not lover beautiful application? That is why we have style folder and keep your all those animcation, font styles, css to there and make your apps visually appealing because data are most digested when presented better 😃
+        - Utils
+            - Here we can keep all those functions which are quick helpful. Sure you are wondering hey give me the example.
+            - So Examples are
+                - Imagine you ask for peeople end point and it return the data
+                - The data has lots of things.
+                - You are interested in how to fetch next page of data because we do not download mamoth size of data to keep our apps responsive and yes please give server some good time.
+                - So I wrote a function which accepts your supplied URl (next page of data url) and then what it does get parameters out of that to build next request URL.
+                - We are building the web request each time instead of storing/handling those URL!
+                - Because if we can things like I did here, we will always have clear rules to play the game and champion the entire sport of building scalable, responsive, high performing applications.
+            - So keep the function here which you think are highly need to be reusable and easily accessible
+        - Routes:
+            - Application need to be accessible by each data point as much as we can
+            - What is a benefit?
+                - If we browse to youtube and it only displays youtube.com that will make things hard to understand where are we exactly at a point and how to share that URL quickly.
+            - Routers help us to route through web application easily
+        - Tools
+            - I have used some of the very interesting tools here to build this app
+            - First one is Webpack
+                - When you design single page application, you application routers through the server for HTML page only once.
+                - That single HTML page than build the views and getting only data from the server.
+                - This help in fuild experience and fewer roundtrips to get next html pages from a server.
+                - The highly scalable apps we use SPA concept which modify the views.
+                - Imagine you just need to update a single component or let say just needs a feed of facebook. Why would you go to the server and ask more tons of pages?
+                - So after writing spa, webpack help us to package the entire application in single html page, one css, image folder, one JS file
+                - Above all this, it is bundled and minified which reduces the size of the files.
+                - These minified/compressed files are very helpful in delivery the lightest payload to your browser in most possible less time,
+                - So webpack si very helpful thing.
+                - It basically modules and dependencies of an application and  static assetts. This code base can be broken down into smaller chuck which helps us in faster loading of an application on browser.
+            - Babel
+                - So it is transpiler
+                - Not every browser support latest js version
+                - So someone made middle man which take your newer version of js and transpire so it can run on older version of browser and you can achieve maximum browser compatibility of your application
+            - Build Setting
+                - Help us to device how we want to make build and also helps in analyzing any error happen during building package
+            - Chalk
+                - Easy to use console.log like library but have color styles
+                - Colors are easy to recognize and rememeber
+                - Green text going on the console means hey everything is good so far!
+                - Red suddenly, Oh we got into something
+                - Yellow- you better start looking at this warning
+                - This is just easy way to debug an application
+            - This App is nodejs based so we also need to make sure it is compatible
+            - Tests
+                - Testing an application with modular/Unit way is good as application grows the testing becomes difficult
+                - Thanks to mocha test.
+                - You can write unit test of test small part of an application
+                - Example
+                    - You come to office next day and pull the data from repository to get updates of team meber
+                    - You try to run the app and it is broken?
+                    - How to quickly find out what is wrong?
+                        - Unit test.Run them and it will give results that what code is failing .:)
+            - eslint
+                - Make rules your team want to follow.
+                - Like hey please do not leave brackers between property and value. <button onclick={}>
+                - The syntax then looks same across all app's code and easy to follow, understand and the code looks clean.
+            - Gitignore
+                - Ignore some files like binary files when you add code to repo
+            - Istanbul
+                - Coverage library for tests
+                - When you run 10000 unit tests, you want to know at somepoint how your tests are doing.
+                - This tool is great
+            - Travis/appveyor
+                - For continuous integration in the world of agile and every day feature release/fix release we need something to do this easily.
+            - Yarn/NPM
+                - Yarn is new package manager from facebook to compete NPM
+                - Wanted to give it a try but I think NPM is so easy and it is very hard to get away from NPM.
+- This was a very great project.
+- I wanted to use immutable.js as it has mutable state concept that is very compatible with reactjs concept
+- It also has inbuilt data-structures to manage the data in memory efficiently and access it with fastest possible time(/searching) There are very other great in-memory db libraries available but immutable is something that is coming ahead and has large developer platfrom facebook behind it.
+- I will build on his project ahead and make full discovery available like another endpoint
+- I would like to see faster loading time of page/components atleast whatever we can do client side. In addition, building entire reusable component library that can be easily designed, changed in different layout with minimal configuration/work
+- Apart from all, I would like to avoid frequent visits to server ahead.
+- By UI side I would like to see what new concepts are coming and can help this application to improve by taking advantages of that feature.
+- I create live search and pagination in this app so next it I would like to create a more fluid experience on a search back and forth. Currently, this app searches only forward and keep the pass results in memory. While what i would like to do keeping only view data in-memory and whichever data is not being displayed get destroyed so we only have to handle very very less data along with app's own data.
+- I really enjoyed making this awesome app.
+
+THANK YOU,
+DIPAK
